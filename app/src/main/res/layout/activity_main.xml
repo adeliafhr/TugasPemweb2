@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/birutwt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/namaProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whispond"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/profile" />
+
+    <ImageView
+    android:id="@+id/imageView5"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    app:srcCompat="@drawable/panah"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="12dp"
+    android:layout_marginStart="12dp"
+    android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/search"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageView7"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitCenter"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/titik3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="fitCenter"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" @whispond"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/namaProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/built"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Built to grow your business. 🐶 DM for support!"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/advertising"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advertising &amp; Marketing Agency"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/built"
+        app:layout_constraintStart_toStartOf="@id/tasKerja"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/vancover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vancover, Canada"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/advertising"
+        app:layout_constraintStart_toStartOf="@id/lokasi"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/joined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joined May 2010"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/vancover"
+        app:layout_constraintStart_toStartOf="@id/kalender"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Following"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/joined"
+        app:layout_constraintStart_toStartOf="@id/angkaFoll"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:id="@+id/angkaFoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 156"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/kalender"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="9dp" />
+
+    <ImageView
+        android:id="@+id/kalender"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        app:srcCompat="@drawable/calendar"
+        app:tint="#808080"
+        app:layout_constraintTop_toBottomOf="@id/lokasi"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/angkaWers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22,1 K"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/joined"
+        app:layout_constraintStart_toStartOf="@id/following"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="9dp"/>
+
+    <TextView
+        android:id="@+id/followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/joined"
+        app:layout_constraintStart_toStartOf="@id/angkaWers"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/tasKerja"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        app:srcCompat="@drawable/business"
+        app:tint="#808080"
+        app:layout_constraintTop_toBottomOf="@id/built"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"/>
+
+    <ImageView
+        android:id="@+id/lokasi"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        app:srcCompat="@drawable/location"
+        app:tint="#808080"
+        app:layout_constraintTop_toBottomOf="@id/tasKerja"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="fitCenter"
+        android:clipToOutline="true"
+        android:elevation="6dp"/>
+
+    <ImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="297dp"
+        android:layout_height="172dp"
+        app:srcCompat="@drawable/edit"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-45dp"
+        android:layout_marginEnd="-55dp"/>
+
+    <ImageView
+        android:id="@+id/link"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        app:srcCompat="@drawable/link"
+        app:tint="#808080"
+        app:layout_constraintTop_toBottomOf="@id/advertising"
+        app:layout_constraintStart_toStartOf="@id/lokasi"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/namaLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="linktr.ee/wishpondoffici..."
+        android:textColor="#87CEFA"
+        app:layout_constraintTop_toBottomOf="@id/advertising"
+        app:layout_constraintStart_toStartOf="@id/link"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/tweets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tweets"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/angkaFoll"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        />
+
+    <TextView
+        android:id="@+id/twtRepli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tweets &amp; replies"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/angkaFoll"
+        app:layout_constraintStart_toStartOf="@id/tweets"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="70dp"/>
+
+    <TextView
+        android:id="@+id/media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Media"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/angkaFoll"
+        app:layout_constraintStart_toStartOf="@id/twtRepli"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="130dp" />
+
+    <TextView
+        android:id="@+id/likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Likes"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/angkaFoll"
+        app:layout_constraintStart_toStartOf="@id/media"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="60dp" />
+
+    <ImageView
+        android:id="@+id/profile2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/profile"
+        app:layout_constraintTop_toBottomOf="@id/pin"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-10dp"/>
+
+    <ImageView
+        android:id="@+id/pin"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        app:srcCompat="@drawable/pin"
+        app:tint="#666666"
+        app:layout_constraintTop_toBottomOf="@id/tweets"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/pinned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pinned Tweet"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tweets"
+        app:layout_constraintStart_toStartOf="@id/pin"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:id="@+id/garis"
+        android:layout_width="300dp"
+        android:layout_height="445dp"
+        app:srcCompat="@drawable/garis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tweets"
+        android:layout_marginTop="-220dp"
+        android:layout_marginEnd="35dp"/>
+
+    <ImageView
+        android:id="@+id/garisBiru"
+        android:layout_width="56dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/remove"
+        app:layout_constraintBottom_toTopOf="@id/garis"
+        android:layout_marginBottom="-255dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="35dp"/>
+
+    <TextView
+        android:id="@+id/wishpond2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wishpond"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/pinned"
+        app:layout_constraintStart_toStartOf="@id/profile2"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/wishpond3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" @Wishpond 1d"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/pinned"
+        app:layout_constraintStart_toStartOf="@id/wishpond2"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/This"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Fates Forever, a MOBA developed by"
+        app:layout_constraintTop_toBottomOf="@id/wishpond2"
+        app:layout_constraintStart_toStartOf="@id/profile2"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/jason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" @jasoncitron"
+        android:textColor="#87CEFA"
+        app:layout_constraintTop_toBottomOf="@id/This"
+        app:layout_constraintStart_toStartOf="@id/profile2"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:id="@+id/svish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" @svishnevskiy"
+        android:textColor="#87CEFA"
+        app:layout_constraintTop_toBottomOf="@id/This"
+        app:layout_constraintStart_toStartOf="@id/dan"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:id="@+id/dan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dan"
+        app:layout_constraintTop_toBottomOf="@id/This"
+        app:layout_constraintStart_toStartOf="@id/jason"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="-2dp"/>
+
+    <TextView
+        android:id="@+id/that"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="that would"
+        app:layout_constraintTop_toBottomOf="@id/This"
+        app:layout_constraintStart_toStartOf="@id/svish"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:id="@+id/lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lay the foundations for"
+        app:layout_constraintTop_toBottomOf="@id/jason"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:id="@+id/discord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" @discord"
+        android:textColor="#87CEFA"
+        app:layout_constraintTop_toBottomOf="@id/svish"
+        app:layout_constraintStart_toStartOf="@id/lay"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:id="@+id/so"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="So how did they go from multiplayer games"
+        app:layout_constraintTop_toBottomOf="@id/lay"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to a chat app that was meant for gamers but"
+        app:layout_constraintTop_toBottomOf="@id/so"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:id="@+id/has"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="has revolutionized how people"
+        app:layout_constraintTop_toBottomOf="@id/to"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:id="@+id/communicate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="communicate online?"
+        app:layout_constraintTop_toBottomOf="@id/has"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:id="@+id/mata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="👀 this 🧵"
+        app:layout_constraintTop_toBottomOf="@id/communicate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:id="@+id/startup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" #startupsucces"
+        android:textColor="#87CEFA"
+        app:layout_constraintTop_toBottomOf="@id/communicate"
+        app:layout_constraintStart_toStartOf="@id/mata"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="-2dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="313dp"
+        android:layout_height="239dp"
+        app:srcCompat="@drawable/ml"
+        app:layout_constraintTop_toBottomOf="@id/mata"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
